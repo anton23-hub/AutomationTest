@@ -22,14 +22,17 @@ describe('Cermati Registration Page', function () {
         await regPage.fillLastName(process.env.TEST_LASTNAME);
         await regPage.submit();
         await regPage.acceptTerms();
+
+        // input OTP manual before 10 sec
+        await driver.sleep(10000);
         const pinField = await driver.findElement(By.id('pin-input-0'));
         expect(await pinField.isDisplayed()).to.be.true;
         await regPage.waitForPinInput();
     });
 
     after(async () => {
-        // wait 30 seconds before closing browser
-        await driver.sleep(50000);
+        // wait 5 seconds before closing browser
+        await driver.sleep(10000);
         await driver.quit();
     });
     

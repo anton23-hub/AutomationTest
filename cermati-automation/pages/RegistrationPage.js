@@ -31,7 +31,27 @@ class RegistrationPage {
     }
 
     async acceptTerms() {
-        await this.driver.findElement(By.css('[type="checkbox"]')).click();
+        try {
+            // Switch to the reCAPTCHA iframe
+            await this.driver.wait(until.ableToSwitchToFrame(
+                this.driver.findElement(By.css('iframe[src*="recaptcha"]'))
+            ), 5000);
+    
+            // Wait for the checkbox element
+            const recaptchaCheckbox = await this.driver.wait(
+                until.elementLocated(By.id('recaptcha-anchor')),
+                5000
+            );
+    
+            // Click the checkbox
+            await recaptchaCheckbox.click();
+            console.log('reCAPTCHA checkbox clicked.');
+    
+            // Switch back to the main page
+            await this.driver.switchTo().defaultContent();
+        } catch (err) {
+            console.log('reCAPTCHA checkbox not found or not clickable:', err.message);
+        }
     }
 
     async waitForPinInput() {
