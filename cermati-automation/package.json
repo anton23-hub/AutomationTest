@@ -1,0 +1,21 @@
+{
+  "name": "cermati-automation",
+  "version": "1.0.0",
+  "description": "Selenium WebDriver automation for Cermati registration page",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "chromedriver": "^139.0.0",
+    "dotenv": "^16.4.5",
+    "selenium-webdriver": "^4.16.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.1"
+  }
+}
