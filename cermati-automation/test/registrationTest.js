@@ -31,7 +31,7 @@ describe('Cermati Registration Page', function () {
     });
 
     after(async () => {
-        // wait 5 seconds before closing browser
+        // wait 10 seconds before closing browser
         await driver.sleep(10000);
         await driver.quit();
     });
