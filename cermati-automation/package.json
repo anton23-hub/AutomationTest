@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^5.1.1",
-    "chromedriver": "^139.0.0",
-    "dotenv": "^16.4.5",
-    "selenium-webdriver": "^4.16.0"
+    "allure-mocha": "^3.3.3",
+    "chai": "^5.2.1",
+    "chromedriver": "^139.0.1",
+    "dotenv": "^16.6.1",
+    "geckodriver": "^5.0.0",
+    "selenium-webdriver": "^4.35.0"
   },
   "devDependencies": {
     "mocha": "^11.7.1"

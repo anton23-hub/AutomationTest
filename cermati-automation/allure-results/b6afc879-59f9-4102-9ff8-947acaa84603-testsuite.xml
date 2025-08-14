@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1755157941897' stop='1755157942240'>
+    <name>Cermati Registration — Positive Flow</name>
+    <title>Cermati Registration — Positive Flow</title>
+    <test-cases>
+        <test-case start='1755157942240' status='broken' stop='1755157942240'>
+            <name>"before all" hook for "should register successfully and show PIN input field"</name>
+            <title>"before all" hook for "should register successfully and show PIN input field"</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'quit')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'quit')
+                    at Context.&lt;anonymous> (test/registrationTest.js:16:18)
+                    at process.processImmediate (node:internal/timers:485:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

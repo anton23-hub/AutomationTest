@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1755157319969' stop='1755157353984'>
+    <name>Cermati Registration — Positive Flow</name>
+    <title>Cermati Registration — Positive Flow</title>
+    <test-cases>
+        <test-case start='1755157338035' status='broken' stop='1755157353928'>
+            <name>should register successfully and show PIN input field</name>
+            <title>should register successfully and show PIN input field</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Waiting for element to be located By(css selector, *[id="pin-input-0"])
+                Wait timed out after 10095ms</message>
+                <stack-trace>TimeoutError: Waiting for element to be located By(css selector, *[id="pin-input-0"])
+                Wait timed out after 10095ms
+                    at /Users/anton/Documents/AutomationTest/cermati-automation/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+                    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
