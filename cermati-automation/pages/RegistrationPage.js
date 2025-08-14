@@ -36,7 +36,7 @@ class RegistrationPage {
 
   async acceptTermsIfPresent() {
         try {
-            // Wait up to 3 seconds for the checkbox after submit
+            // Wait up to 5 seconds for the checkbox after submit
             const checkbox = await this.driver.wait(
                 until.elementLocated(By.css('[type="checkbox"]')),
                 5000
